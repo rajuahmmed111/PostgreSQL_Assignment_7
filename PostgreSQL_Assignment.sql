@@ -3,7 +3,7 @@ CREATE TABLE students (
     student_id INT PRIMARY KEY,
     student_name VARCHAR(50) NOT NULL,
     age INT NOT NULL,
-    email VARCHAR(50) UNIQUE NOT NULL,
+    email VARCHAR(50),
     frontend_mark INT,
     backend_mark INT,
     status VARCHAR(50)
@@ -17,6 +17,6 @@ CREATE TABLE courses (
 
 CREATE TABLE enrollment (
     enrollment_id INT PRIMARY KEY,
-    student_id INT REFERENCES "students"(student_id),
-    course_id INT REFERENCES "courses"(course_id),
+    student_id INT REFERENCES "students" (student_id),
+    course_id INT REFERENCES "courses" (course_id),
 );
