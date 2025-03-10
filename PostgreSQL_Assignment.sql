@@ -480,6 +480,168 @@ CREATE TABLE courses (
     credits INT NOT NULL
 );
 
+-- insert data into courses table
+INSERT INTO
+    courses (
+        course_id,
+        course_name,
+        credits
+    )
+VALUES (
+        1,
+        'Introduction to Computer Science',
+        3
+    ),
+    (
+        2,
+        'Data Structures and Algorithms',
+        4
+    ),
+    (
+        3,
+        'Database Management Systems',
+        3
+    ),
+    (4, 'Software Engineering', 4),
+    (5, 'Operating Systems', 3),
+    (6, 'Computer Networks', 3),
+    (
+        7,
+        'Artificial Intelligence',
+        4
+    ),
+    (8, 'Machine Learning', 4),
+    (9, 'Cyber Security', 3),
+    (10, 'Web Development', 3),
+    (
+        11,
+        'Mobile App Development',
+        3
+    ),
+    (12, 'Cloud Computing', 4),
+    (13, 'Big Data Analytics', 4),
+    (
+        14,
+        'Internet of Things (IoT)',
+        3
+    ),
+    (15, 'Embedded Systems', 3),
+    (
+        16,
+        'Human-Computer Interaction',
+        3
+    ),
+    (
+        17,
+        'Blockchain Technology',
+        4
+    ),
+    (18, 'Ethical Hacking', 3),
+    (19, 'Computer Graphics', 3),
+    (20, 'Game Development', 4),
+    (
+        21,
+        'Software Testing and Quality Assurance',
+        3
+    ),
+    (
+        22,
+        'Digital Signal Processing',
+        3
+    ),
+    (
+        23,
+        'Cryptography and Network Security',
+        3
+    ),
+    (24, 'Robotics', 4),
+    (
+        25,
+        'Natural Language Processing',
+        4
+    ),
+    (
+        26,
+        'Business Intelligence',
+        3
+    ),
+    (
+        27,
+        'E-Commerce Technologies',
+        3
+    ),
+    (28, 'Bioinformatics', 4),
+    (
+        29,
+        'Augmented Reality and Virtual Reality',
+        4
+    ),
+    (
+        30,
+        'Parallel and Distributed Computing',
+        3
+    ),
+    (31, 'Compiler Design', 3),
+    (32, 'Quantum Computing', 4),
+    (
+        33,
+        'Geographic Information Systems',
+        3
+    ),
+    (
+        34,
+        'Digital Image Processing',
+        3
+    ),
+    (
+        35,
+        'Microprocessors and Microcontrollers',
+        3
+    ),
+    (
+        36,
+        'Wireless Communication',
+        3
+    ),
+    (
+        37,
+        'Computational Biology',
+        4
+    ),
+    (
+        38,
+        'Social Network Analysis',
+        3
+    ),
+    (39, 'Pattern Recognition', 3),
+    (
+        40,
+        'Information Retrieval',
+        3
+    ),
+    (
+        41,
+        'Knowledge Representation and Reasoning',
+        4
+    ),
+    (42, 'Data Visualization', 3),
+    (
+        43,
+        'Software Project Management',
+        3
+    ),
+    (44, 'Computer Vision', 4),
+    (45, 'Health Informatics', 3),
+    (46, 'Multimedia Systems', 3),
+    (47, 'Ubiquitous Computing', 3),
+    (48, 'Cognitive Computing', 4),
+    (
+        49,
+        'High-Performance Computing',
+        4
+    ),
+    (50, 'Digital Forensics', 3);
+
 -- create enrollment table
 CREATE TABLE enrollment (
     enrollment_id INT PRIMARY KEY,
