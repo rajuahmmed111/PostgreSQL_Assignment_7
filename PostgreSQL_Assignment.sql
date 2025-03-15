@@ -759,3 +759,8 @@ WHERE (frontend_mark + backend_mark) = (
     );
 
 SELECT * FROM students WHERE status = 'Awarded'
+
+
+-- Query 4:
+-- Delete all courses that have no students enrolled.
+DELETE FROM courses WHERE course_id NOT IN (SELECT  course_id FROM enrollment)
