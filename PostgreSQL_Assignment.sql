@@ -739,8 +739,20 @@ INSERT INTO
     );
 
 
--- quey - 2 :
+-- quey 2 :
 -- Retrieve the names of all students who are enrolled in the course 'Next.js .'
 SELECT * FROM students as s 
 JOIN enrollment as e ON s.student_id = e.student_id
 JOIN courses as c ON c.course_id = e.course_id WHERE c.course_name = 'Next.js .'
+
+
+-- Query 3:
+-- Update the status of the student with the highest total (frontend_mark + backend_mark) to 'Awarded'.
+
+SELECT student_id, frontend_mark + backend_mark as total_marks
+FROM students
+ORDER BY total_marks DESC
+LIMIT 1;
+UPDATE students
+SET status = 'Awarded'
+WHERE student_id = (SELECT )
