@@ -714,8 +714,26 @@ SELECT * FROM courses;
 
 SELECT * FROM enrollment;
 
-
 -------------- solving queries --------------------
 
-
 -- Query 1:
+-- insert a new student record with the following details
+INSERT INTO
+    students (
+        student_id,
+        student_name,
+        age,
+        email,
+        frontend_mark,
+        backend_mark,
+        status
+    )
+    VALUES (
+        51,
+        'New Student',
+        22,
+        'newstudent@example.com',
+        90,
+        85,
+        'Pass'
+    );
