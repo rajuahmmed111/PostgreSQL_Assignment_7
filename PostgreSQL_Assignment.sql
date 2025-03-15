@@ -737,3 +737,8 @@ INSERT INTO
         85,
         'Pass'
     );
+
+
+-- quey - 2 :
+-- Retrieve the names of all students who are enrolled in the course 'Next.js .'
+SELECT * FROM students as s JOIN courses as c ON course_id =;
