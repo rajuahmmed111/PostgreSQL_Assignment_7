@@ -741,4 +741,6 @@ INSERT INTO
 
 -- quey - 2 :
 -- Retrieve the names of all students who are enrolled in the course 'Next.js .'
-SELECT * FROM students as s JOIN courses as c ON course_id =;
+SELECT * FROM students as s 
+JOIN enrollment as e ON s.student_id = e.student_id
+JOIN courses as c ON c.course_id = e.course_id WHERE c.course_name = 'Next.js .'
