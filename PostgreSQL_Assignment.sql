@@ -713,3 +713,9 @@ SELECT * FROM students;
 SELECT * FROM courses;
 
 SELECT * FROM enrollment;
+
+
+-------------- solving queries --------------------
+
+
+-- Query 1:
