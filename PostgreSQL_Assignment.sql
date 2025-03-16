@@ -797,5 +797,3 @@ SELECT avg(age) AS average_age FROM students;
     SELECT student_name
     FROM students
     WHERE email LIKE '%example.com';
-
--- Query 9:
