@@ -774,6 +774,4 @@ WHERE
 SELECT student_name FROM students ORDER BY student_id LIMIT 2 OFFSET 2;
 
 -- Query 6:
--- Retrieve the course names and the number of students enrolled in the course.
-
-SELECT course_name FROM courses as c GROUP BY course_name JOIN enrollment as e ON e.student_id = c.course_id;
+-- Retrieve the course names and the number of students enrolled in the course .
