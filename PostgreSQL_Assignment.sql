@@ -852,11 +852,3 @@ Ans:  In PostgreSQL, an index is a database object used to speed up data retriev
 
 Q-12:  Explain the concept of a PostgreSQL view and how it differs from a table.
 Ans:  A view in PostgreSQL is a virtual table based on the result of a SELECT query.
-
-
-
-
-
-
-
-
