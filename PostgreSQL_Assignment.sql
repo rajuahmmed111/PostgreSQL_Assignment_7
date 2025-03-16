@@ -707,6 +707,7 @@ VALUES (1, 1, 1),
     (49, 49, 49),
     (50, 50, 50);
 
+
 -- show table information
 SELECT * FROM students;
 
