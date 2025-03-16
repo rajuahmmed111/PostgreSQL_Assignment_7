@@ -771,7 +771,19 @@ WHERE
 
 -- Query 5:
 -- Retrieve the names of students using a limit of 2, starting from the 3rd student.
-SELECT student_name FROM students ORDER BY student_id LIMIT 2 OFFSET 2;
+SELECT student_name
+FROM students
+ORDER BY student_id
+LIMIT 2
+OFFSET
+    2;
 
 -- Query 6:
 -- Retrieve the course names and the number of students enrolled in the course .
+SELECT
+    course_name,
+    count(e.student_id) as students_enrolled
+FROM courses as c
+    JOIN enrollment as e ON c.course_id = e.course_id
+GROUP BY
+    course_name;
