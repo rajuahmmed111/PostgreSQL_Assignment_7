@@ -798,3 +798,65 @@ SELECT avg(age) AS average_age FROM students;
     SELECT student_name
     FROM students
     WHERE email LIKE '%example.com';
+
+
+
+
+-------------- Question Answer --------------------
+
+
+Q-1:  What is PostgreSQL?
+Ans:  PostgreSQL is a powerful, open-source, object-relational database management system (ORDBMS).
+
+Q-2:  What is the purpose of a database schema in PostgreSQL?
+Ans:  In PostgreSQL, a schema is a logical structure that organizes and groups database objects such as tables, views, indexes, functions, and sequences.
+
+Q-3:  Explain the primary key and foreign key concepts in PostgreSQL.
+Ans:     A primary key is a column that uniquely identifies each record in a table.
+              A foreign key is a column in one table that refers to the primary key in another table.
+
+Q-4:  What is the difference between the VARCHAR and CHAR data types?
+Ans:  VARCHAR-- A variable-length string data type that can store text of up to a specified length.
+          CHAR-- A fixed-length string data type that always stores exactly the specified number of characters.
+
+Q-5:  Explain the purpose of the WHERE clause in a SELECT statement.
+Ans:  The WHERE clause in a SELECT statement is used to filter rows from a database table based on specific conditions.
+
+Q-6:  What are the LIMIT and OFFSET clauses used for?
+Ans:  LIMIT-- Restricts the number of rows returned by a query.
+          OFFSET-- Skips a specified number of rows before starting to return rows.
+Q-7:  How can you perform data modification using UPDATE statements?
+Ans:  The UPDATE statement in PostgreSQL is used to modify existing records in a table.
+          Syntax-- UPDATE table_name
+                         SET column1 = value1, column2 = value2
+                         WHERE condition;
+
+Q-8:  What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+Ans:  The JOIN operation in PostgreSQL is used to combine rows from two or more tables based on a related column between them.
+          Syntax--   SELECT  t1.column, t2.column
+                           FROM table1 t1
+INNER JOIN table2 t2
+ON t1.common_column = t2.common_column;
+
+Q-9:  Explain the GROUP BY clause and its role in aggregation operations.
+Ans:  The GROUP BY clause in PostgreSQL is used to group rows that have the same values in specified columns.
+
+Q-10:  How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL?
+Ans:  COUNT -- Counts the number of rows or non-null values in a column.
+          SUM -- Computes the total of numeric values in a column.
+         AVG -- Computes the average value of a numeric column.
+
+Q-11:  What is the purpose of an index in PostgreSQL, and how does it optimize query performance?
+Ans:  In PostgreSQL, an index is a database object used to speed up data retrieval operations by allowing the database to locate rows more efficiently.
+
+
+Q-12:  Explain the concept of a PostgreSQL view and how it differs from a table.
+Ans:  A view in PostgreSQL is a virtual table based on the result of a SELECT query.
+
+
+
+
+
+
+
+
