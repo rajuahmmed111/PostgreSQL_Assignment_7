@@ -764,3 +764,7 @@ SELECT * FROM students WHERE status = 'Awarded'
 -- Query 4:
 -- Delete all courses that have no students enrolled.
 DELETE FROM courses WHERE course_id NOT IN (SELECT  course_id FROM enrollment);
+
+
+-- Query 5:
+-- Retrieve the names of all students who have a frontend_mark higher than 90 and have taken at least 3 courses.
