@@ -787,3 +787,8 @@ FROM courses as c
     JOIN enrollment as e ON c.course_id = e.course_id
 GROUP BY
     course_name;
+
+
+-- Query 7:
+-- Calculate and display the average age of all students.
+SELECT avg(age) AS average_age FROM students;
